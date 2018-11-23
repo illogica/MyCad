@@ -1,0 +1,17 @@
+{
+    "locale": "it",
+    "drawing_area_background": [
+        0.501960813999176,
+        0.501960813999176,
+        0.501960813999176,
+        1.0
+    ],
+    "drawing_area_pointer_size": 40.0,
+    "drawing_area_pointer_width": 1.0,
+    "drawing_area_pointer_color": [
+        0.9607843160629272,
+        0.9607843160629272,
+        0.9607843160629272,
+        1.0
+    ]
+}
