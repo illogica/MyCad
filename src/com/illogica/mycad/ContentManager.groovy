@@ -1,6 +1,7 @@
 package com.illogica.mycad
 
 import com.illogica.mycad.graph.Pointer
+import com.illogica.mycad.graph.SheetA4
 import javafx.scene.layout.Background
 import javafx.scene.layout.BackgroundFill
 import javafx.scene.layout.Pane
@@ -13,6 +14,8 @@ class ContentManager {
     Line line
 
     Pointer pointer
+
+    SheetA4 sheetA4
 
 
     ContentManager(Pane pane){
@@ -30,8 +33,11 @@ class ContentManager {
         line.setStroke(Color.GREEN)
 
         pointer = new Pointer()
+        sheetA4 = new SheetA4()
 
         pane.getChildren().add(line)
+
+        pane.getChildren().add(sheetA4)
         pane.getChildren().add(pointer)
 
     }
