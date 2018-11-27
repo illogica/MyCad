@@ -52,7 +52,7 @@
       </VBox>
    </top>
    <center>
-      <Pane fx:id="paneMain" onMouseClicked="#onPaneMainMouseClick" onMouseEntered="#onPaneMainMouseEnter" onMouseExited="#onPaneMainMouseExit" onMouseMoved="#onPaneMainMouseMove" onScroll="#onPaneMainScroll" BorderPane.alignment="CENTER">
+      <Pane fx:id="paneMain" onContextMenuRequested="#onPaneMainContextMenuRequested" onDragDetected="#onPaneMainDragDetected" onDragDone="#onPaneMainDragDone" onDragDropped="#onPaneMainDragDropped" onDragEntered="#onPaneMainDragEntered" onDragExited="#onPaneMainDragExited" onDragOver="#onPaneMainDragOver" onMouseClicked="#onPaneMainMouseClick" onMouseDragEntered="#onPaneMainMouseDragEntered" onMouseDragExited="#onPaneMainMouseDragExited" onMouseDragOver="#onPaneMainMouseDragOver" onMouseDragReleased="#onPaneMainMouseDragReleased" onMouseDragged="#onPaneMainMouseDragged" onMouseEntered="#onPaneMainMouseEnter" onMouseExited="#onPaneMainMouseExit" onMouseMoved="#onPaneMainMouseMove" onScroll="#onPaneMainScroll" BorderPane.alignment="CENTER">
          <padding>
             <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
          </padding></Pane>

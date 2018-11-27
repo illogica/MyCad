@@ -6,6 +6,9 @@ import javafx.event.ActionEvent
 import javafx.fxml.FXML
 import javafx.fxml.Initializable
 import javafx.scene.Cursor
+import javafx.scene.input.ContextMenuEvent
+import javafx.scene.input.DragEvent
+import javafx.scene.input.MouseDragEvent
 import javafx.scene.input.ScrollEvent
 import javafx.scene.layout.Pane
 import javafx.scene.control.Button
@@ -130,5 +133,66 @@ class MainController implements Initializable{
     void onPaneMainMouseExit(MouseEvent event) {
         //println "Exit mouse: " + event
         //paneMain.setCursor(Cursor.TEXT)
+    }
+
+    @FXML
+    void onPaneMainDragDetected(MouseEvent event) {
+        println "onPaneMainDragDetected: " + event
+    }
+
+    @FXML
+    void onPaneMainDragDone(DragEvent event) {
+        println "onPaneMainDragDone: " + event
+    }
+
+    @FXML
+    void onPaneMainDragDropped(DragEvent event) {
+        println "onPaneMainDragDropped: " + event
+    }
+
+    @FXML
+    void onPaneMainDragEntered(DragEvent event) {
+        println "onPaneMainDragEntered: " + event
+    }
+
+    @FXML
+    void onPaneMainDragExited(DragEvent event) {
+        println "onPaneMainDragExited: " + event
+    }
+
+    @FXML
+    void onPaneMainDragOver(DragEvent event) {
+        println "onPaneMainDragOver: " + event
+    }
+
+    @FXML
+    void onPaneMainMouseDragEntered(MouseDragEvent event) {
+        println "onPaneMainMouseDragEntered: " + event
+    }
+
+    @FXML
+    void onPaneMainMouseDragExited(MouseDragEvent event) {
+        println "onPaneMainMouseDragExited: " + event
+    }
+
+    @FXML
+    void onPaneMainMouseDragOver(MouseDragEvent event) {
+        println "onPaneMainMouseDragOver: " + event
+    }
+
+    @FXML
+    void onPaneMainMouseDragReleased(MouseDragEvent event) {
+        println "onPaneMainMouseDragReleased: " + event
+    }
+
+    @FXML
+    void onPaneMainMouseDragged(MouseEvent event) {
+        //println "onPaneMainMouseDragged: " + event
+        myCad.eventManager.handleMouseDrag(event)
+    }
+
+    @FXML
+    void onPaneMainContextMenuRequested(ContextMenuEvent event) {
+        println "onPaneMainContextMenuRequested: " + event
     }
 }

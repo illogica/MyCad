@@ -23,4 +23,8 @@ class EventManager {
     void handleResize(Double height, Double width){
         //println "New size: " + height + ", " + width
     }
+
+    void handleMouseDrag(MouseEvent event){
+        myCad.contentManager.move(event.x, event.y)
+    }
 }
